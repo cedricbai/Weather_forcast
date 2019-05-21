@@ -1,1 +1,1 @@
-web: node DBserver.js & npm start & wait -n
+web: node DBserver.js & npm start
