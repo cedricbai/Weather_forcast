@@ -51,7 +51,7 @@ class Country extends Component {
 
   componentDidMount(){
     const that = this;
-    fetch("http://localhost:3001/country", {
+    fetch("http://b4e9xxkxnpu2v96i.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3001/country", {
       method: "GET",
       mode: "cors",
     })
@@ -157,7 +157,7 @@ export class MapContainer extends Component {
       var the_selected_country = country_select.options[country_select.selectedIndex].text;
       var the_selected_city = city_select.options[city_select.selectedIndex].text;
       this.setState({marker_name: the_selected_city});
-      var location_url = "http://localhost:3001/country/" + the_selected_country + "/" + the_selected_city;
+      var location_url = "http://b4e9xxkxnpu2v96i.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3001/country/" + the_selected_country + "/" + the_selected_city;
       fetch(location_url, {
         method: "GET",
         mode: "cors",
@@ -205,7 +205,7 @@ export class MapContainer extends Component {
       //country_select.onchange = function() {
       var the_selected_country = country_select.options[country_select.selectedIndex].text;
       city_select.length = 1;
-      var city_url = "http://localhost:3001/country/" + the_selected_country;
+      var city_url = "http://b4e9xxkxnpu2v96i.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3001/country/" + the_selected_country;
       fetch(city_url, {
         method: "GET",
         mode: "cors",
