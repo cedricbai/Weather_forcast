@@ -8,10 +8,10 @@ app.use(bodyParser.json());
 
 //create database connection
 const conn = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'by19940320',
-  database: 'world_cities'
+  host: 'b4e9xxkxnpu2v96i.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+  user: 'ab4upxuuqm4vfhpe',
+  password: 'dxed9qgkzswra53n',
+  database: 'lzh8b3ijkjiwvsll'
 });
 
 //connect to database
