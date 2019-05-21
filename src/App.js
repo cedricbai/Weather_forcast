@@ -51,7 +51,7 @@ class Country extends Component {
 
   componentDidMount(){
     const that = this;
-    fetch("http://localhost:3001/country", {
+    fetch("/country", {
       method: "GET",
       mode: "cors",
     })
@@ -87,7 +87,7 @@ class Country extends Component {
   }
   render(){
     return(
-      <select style={{position: "absolute", zIndex: 2, left: "1%", top: "11%", width: "16%"}} id="myCountry" onChange={this.props.onChange}>
+      <select style={{position: "absolute", zIndex: 2, left: "1%", top: "11%", width: "16%", height: "30px"}} id="myCountry" onChange={this.props.onChange}>
       </select>
     )
   }
@@ -103,7 +103,7 @@ class City extends Component {
 
   render(){
     return(
-      <select style={{position: "absolute", zIndex: 2, left: "1%", top: "15%", width: "16%"}} id="myCity" onChange={this.props.onChange}>
+      <select style={{position: "absolute", zIndex: 2, left: "1%", top: "16%", width: "16%", height: "30px"}} id="myCity" onChange={this.props.onChange}>
         <option value="" disabled selected hidden>Please select city ..</option>
       </select>
     )

@@ -13,6 +13,12 @@ const conn = mysql.createConnection({
   password: 'dxed9qgkzswra53n',
   database: 'lzh8b3ijkjiwvsll'
 });
+// const conn = mysql.createConnection({
+//   host: 'localhost',
+//   user: 'root',
+//   password: 'by19940320',
+//   database: 'world_cities'
+// });
 
 //connect to database
 conn.connect((err) =>{
@@ -50,12 +56,10 @@ app.get('/country/:id/:cid', (req, res) => {
   });
 });
 
-// let port = process.env.PORT;
-// if (port == null || port == "") {
-//   port = 8000;
-// }
-// app.listen(port);
+const port = process.env.PORT || 3001;
+app.listen(port);
 
-app.listen(3001,() =>{
-  console.log('Server started on port 3000...');
-});
+// console.log('App is listening on port ' + port);
+// app.listen(3001,() =>{
+//   console.log('Server started on port 3000...');
+// });
