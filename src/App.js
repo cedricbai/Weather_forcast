@@ -51,7 +51,7 @@ class Country extends Component {
 
   componentDidMount(){
     const that = this;
-    fetch("/country", {
+    fetch("http://localhost:3001/country/", {
       method: "GET",
       mode: "cors",
     })
