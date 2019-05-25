@@ -249,7 +249,7 @@ export class MapContainer extends Component {
 
          var the_temperature = "\nTemperature: " + data.currently.apparentTemperature + " F";
 
-         var the_humidity = "\nHumidity: " + data.currently.humidity + "%"
+         var the_humidity = "\nHumidity: " + data.currently.humidity * 100 + "%"
 
           var the_windspeed = "\nWindspeed: " + data.currently.windSpeed + "mph";
 
